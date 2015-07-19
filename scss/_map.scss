@@ -14,13 +14,6 @@
     content: '\f217';
   }
 
- .node-alert {
-    -webkit-animation: blink 2s linear;
-    -webkit-animation-iteration-count: infinite;
-    animation: blink 2s linear;
-    animation-iteration-count: infinite;
-  }
-
   .leaflet-top button.leaflet-control {
     margin-top: $buttondistance;
   }
@@ -36,16 +29,4 @@
   .leaflet-right button.leaflet-control {
     margin-right: $buttondistance;
   }
-}
-
-@-webkit-keyframes blink {
-  0%   { opacity: 1.0; }
-  80%  { opacity: 1.0; }
-  90%  { opacity: 0.0; }
-}
-
-@keyframes blink {
-  0%   { opacity: 1.0; }
-  80%  { opacity: 1.0; }
-  90%  { opacity: 0.0; }
 }
