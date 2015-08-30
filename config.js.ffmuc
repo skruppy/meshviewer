@@ -54,7 +54,7 @@ define({
       "name": "Satellit (Bing)",
       "provider": "Bing",
       "config": {
-        "key": "Aiex7HstTT61uOhqmHRbtxFsOO8nd1LLpf_C1n30HPbzX0hvTO4TAAAWJWDZ0J5N",
+        "key": "Ah31K_BgwvvhweQFF8tevi9w3qV4mHmefLOlsIx_9m3XB2gRngWNFbUlIG5EbqyM",
         "type": "AerialWithLabels",
         "maxZoom": 20
       }
