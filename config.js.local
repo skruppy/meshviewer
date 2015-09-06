@@ -1,0 +1,70 @@
+define({
+  "dataPath": "http://localhost/map/data/",
+  "siteName": "Freifunk München",
+  "mapSigmaScale": 0.5,
+  "showContact": true,
+  "maxAge": 14,
+  "nodeInfos": [
+    { "name": "Clientstatistik (24 Stunden)",
+      "thumbnail": "https://ffmuc.net/stats/render/dashboard-solo/db/node?panelId=1&var-node_id={NODE_ID}&width=400&height=200&theme=light",
+      "href": "https://ffmuc.net/stats/dashboard/db/node?panelId=1&fullscreen&var-node_id={NODE_ID}",
+      "caption": "Knoten {NODE_ID}"
+    },
+    { "name": "Clientstatistik (7 Tage)",
+      "thumbnail": "https://ffmuc.net/stats/render/dashboard-solo/db/node?panelId=3&var-node_id={NODE_ID}&width=400&height=200&theme=light",
+      "href": "https://ffmuc.net/stats/dashboard/db/node?panelId=3&fullscreen&var-node_id={NODE_ID}",
+      "caption": "Knoten {NODE_ID}"
+    },
+    { "name": "Trafficstatistik (24 Stunden)",
+      "thumbnail": "https://ffmuc.net/stats/render/dashboard-solo/db/node?panelId=2&var-node_id={NODE_ID}&width=400&height=500&theme=light",
+      "href": "https://ffmuc.net/stats/dashboard/db/node?panelId=2&fullscreen&var-node_id={NODE_ID}",
+      "caption": "Knoten {NODE_ID}"
+    },
+    { "name": "Trafficstatistik (7 Tage)",
+      "thumbnail": "https://ffmuc.net/stats/render/dashboard-solo/db/node?panelId=4&var-node_id={NODE_ID}&width=400&height=500&theme=light",
+      "href": "https://ffmuc.net/stats/dashboard/db/node?panelId=4&fullscreen&var-node_id={NODE_ID}",
+      "caption": "Knoten {NODE_ID}"
+    },
+   ],
+  "mapLayers": [
+    {
+      "name": "Karte (OSM Humanitarian)",
+      "provider": "OpenStreetMap.HOT",
+      "config": {
+        "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>. Tiles courtesy of <a href=\"http://hot.openstreetmap.org\" target=\"_blank\">Humanitarian OpenStreetMap Team</a>",
+        "maxZoom": 20
+      }
+    },
+    {
+      "name": "Karte (OSM Mapnik)",
+      "provider": "OpenStreetMap",
+      "config": {
+        "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>. ♥ <a href=\"http://donate.openstreetmap.org\" class=\"donate-attr\">Make a Donation</a>"
+      }
+    },
+    {
+      "name": "Karte (MapQuest Open)",
+      "provider": "MapQuestOpen",
+      "config": {
+        "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>. Tiles courtesy of <a href=\"http://www.mapquest.com/\" target=\"_blank\">MapQuest</a> <img src=\"https://developer.mapquest.com/content/osm/mq_logo.png\">",
+        "maxZoom": 19
+      }
+    },
+    {
+      "name": "Satellit (Bing)",
+      "provider": "Bing",
+      "config": {
+        "key": "AtNgrTUPwhcgWvbaiNGSggkGsrLFWqOLqAX6_KH4asczuMZ48t07m8Sqn5TEZMTj",
+        "type": "AerialWithLabels",
+        "maxZoom": 20
+      }
+    },
+    {
+      "name": "Einfarbige Karte (CartoDB)",
+      "provider": "CartoDB",
+      "config": {
+        "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>. &copy; <a href=\"http://cartodb.com/attributions\">CartoDB</a>"
+      }
+    }
+  ]
+})
