@@ -1,5 +1,5 @@
 define({
-  "dataPath": "https://ffmuc.net/data/",
+  "dataPath": "https://onmars.eu/ffmuc/data/",
   "siteName": "Freifunk München",
   "mapSigmaScale": 0.5,
   "showContact": true,
